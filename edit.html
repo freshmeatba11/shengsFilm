@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sheng's Film | Edit</title>
+    <!-- google font setting -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500&family=Noto+Serif+TC:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <a id="title" href="index.html">Sheng’s Film</a>
+      <a class="subTitle" href="#">Edit</a>
+
+      <!-- burger button -->
+      <input type="checkbox" name="menu-switcher" id="menu-switcher" />
+      <label for="menu-switcher" class="burger">
+        <div class="container" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </label>
+
+      <nav>
+        <a href="index.html" class="title">Sheng’s Film</a>
+        <ul class="mobileMenu">
+          <li><a href="./direct.html">Direct</a></li>
+          <li><a href="./trailer.html">Trailer</a></li>
+          <li><a href="./interview.html">Interview</a></li>
+          <li><a href="./behindTheScene.html">Behind the Scene</a></li>
+          <li><a href="./edit.html" class="check">Edit</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="threecards">
+        <div class="cards">
+          <a href="./edit-list/edit-1.html">
+            <img
+              class="cardInfo"
+              src="./images/edit/editCardText01.png"
+              alt=""
+            />
+            <img src="./images/edit/editCard01.png" alt="" title="" />
+          </a>
+        </div>
+        <div class="cards">
+          <a href="./edit-list/edit-2.html">
+            <img
+              class="cardInfo"
+              src="./images/edit/editCardText02.png"
+              alt=""
+            />
+            <img src="./images/edit/editCard02.png" alt="" title="" />
+          </a>
+        </div>
+        <div class="cards" style="display: none">
+          <a href="#">
+            <img class="cardInfo" src="" alt="" />
+            <img src="" alt="" title="" />
+          </a>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="./js/app.js"></script>
+</html>
