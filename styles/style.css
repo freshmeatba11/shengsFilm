@@ -387,10 +387,20 @@ main section.right {
   margin-top: 1rem;
 }
 
-main section.right h2 {
+main section.right .titleWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main section.right div h2 {
   font-size: 1.5rem;
   opacity: 0.8;
   font-weight: 600;
+  letter-spacing: 0.1rem;
+  line-height: 170%;
 }
 
 main section.right h3 {
@@ -673,7 +683,7 @@ main section.selfInfo section.bottom div.iconBox a img:hover {
             justify-content: center;
     width: 100vw;
     padding-right: 0rem;
-    margin-top: 9.5rem;
+    margin-top: 11rem;
   }
   main section.right {
     width: 80%;
@@ -682,15 +692,22 @@ main section.selfInfo section.bottom div.iconBox a img:hover {
             justify-content: center;
     margin-top: 1.5rem;
   }
-  main section.right h2 {
+  main section.right .titleWrap {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main section.right div {
+    position: absolute;
+    top: 2.8rem;
+    left: 0;
+    right: 0;
+  }
+  main section.right div h2 {
     font-size: 1.125rem;
     font-weight: 500;
     line-height: 200%;
     text-align: center;
-    position: absolute;
-    top: 3.5rem;
-    left: 0;
-    right: 0;
   }
   main section.right h3 {
     width: 100%;
