@@ -31,6 +31,10 @@ h6 {
   color: white;
 }
 
+body {
+  z-index: -1;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -47,34 +51,9 @@ header {
           align-items: center;
   padding: 2rem 0;
   margin-top: 2rem;
+  z-index: 1;
   -webkit-animation: intoPageHeader 3s forwards;
           animation: intoPageHeader 3s forwards;
-}
-
-@-webkit-keyframes intoPageHeader {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(-3rem);
-            transform: translateY(-3rem);
-  }
-  80% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-
-@keyframes intoPageHeader {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(-3rem);
-            transform: translateY(-3rem);
-  }
-  80% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
 }
 
 header a#title {
@@ -338,32 +317,6 @@ main {
           animation: intoPageMain 3s forwards;
 }
 
-@-webkit-keyframes intoPageMain {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(3rem);
-            transform: translateY(3rem);
-  }
-  80% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-
-@keyframes intoPageMain {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(3rem);
-            transform: translateY(3rem);
-  }
-  80% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-
 main section.threecards {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -577,6 +530,58 @@ main section.selfInfo section.bottom div.iconBox a img {
 main section.selfInfo section.bottom div.iconBox a img:hover {
   -webkit-animation: icon 0.35s forwards;
           animation: icon 0.35s forwards;
+}
+
+@-webkit-keyframes intoPageHeader {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-3rem);
+            transform: translateY(-3rem);
+  }
+  80% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes intoPageHeader {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-3rem);
+            transform: translateY(-3rem);
+  }
+  80% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes intoPageMain {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(3rem);
+            transform: translateY(3rem);
+  }
+  80% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes intoPageMain {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(3rem);
+            transform: translateY(3rem);
+  }
+  80% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 
 @-webkit-keyframes icon {

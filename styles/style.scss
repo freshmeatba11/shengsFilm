@@ -20,7 +20,9 @@ h6 {
   background: rgb(180, 180, 180);
   color: white;
 }
-
+body {
+  z-index: -1;
+}
 header {
   display: flex;
   flex-direction: column;
@@ -28,18 +30,8 @@ header {
   align-items: center;
   padding: 2rem 0;
   margin-top: 2rem;
-
+  z-index: 1;
   animation: intoPageHeader 3s forwards;
-  @keyframes intoPageHeader {
-    0% {
-      opacity: 0;
-      transform: translateY(-3rem);
-    }
-    80% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
 
   a#title {
     text-decoration: none;
@@ -155,8 +147,6 @@ div.imgSliderBox {
       opacity: 0;
       filter: alpha(opacity=0);
       /*當圖片數量增加，影片長度需更改，變為5s*圖片數量*/
-      // animation: silder 15s linear infinite;
-      // animation: slider 30s linear infinite;
       animation: slider 30s linear infinite;
 
       img {
@@ -246,18 +236,7 @@ main {
   justify-content: center;
   margin-top: 1rem;
   width: 100vw;
-
   animation: intoPageMain 3s forwards;
-  @keyframes intoPageMain {
-    0% {
-      opacity: 0;
-      transform: translateY(3rem);
-    }
-    80% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
 
   // gallery page
   section.threecards {
@@ -411,6 +390,28 @@ main {
         }
       }
     }
+  }
+}
+
+@keyframes intoPageHeader {
+  0% {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes intoPageMain {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
