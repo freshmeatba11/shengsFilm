@@ -16,6 +16,10 @@ h6 {
 .check {
   opacity: 1;
 }
+::selection {
+  background: rgb(180, 180, 180);
+  color: white;
+}
 
 header {
   display: flex;

@@ -21,6 +21,16 @@ h6 {
   opacity: 1;
 }
 
+::-moz-selection {
+  background: #b4b4b4;
+  color: white;
+}
+
+::selection {
+  background: #b4b4b4;
+  color: white;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
