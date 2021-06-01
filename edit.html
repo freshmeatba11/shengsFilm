@@ -12,10 +12,26 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/style.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("a.link").click(function (event) {
+          //點選 class 為 link 的 a 元件時觸發
+          event.preventDefault(); //取消事件預設動作
+          newLocation = this.href;
+          $("body").fadeOut(1000, newpage); //點選後淡出
+        });
+
+        function newpage() {
+          window.location = newLocation;
+        }
+      });
+    </script>
   </head>
   <body>
     <header>
-      <a id="title" href="index.html">Sheng’s Film</a>
+      <a id="title" class="link" href="index.html">Sheng’s Film</a>
       <a class="subTitle" href="#">Edit</a>
 
       <!-- burger button -->
@@ -29,14 +45,16 @@
       </label>
 
       <nav>
-        <a href="index.html" class="title">Sheng’s Film</a>
+        <a href="index.html" class="title link">Sheng’s Film</a>
         <ul class="mobileMenu">
-          <li><a href="./direct.html">Direct</a></li>
-          <li><a href="./trailer.html">Trailer</a></li>
-          <li><a href="./interview.html">Interview</a></li>
-          <li><a href="./behindTheScene.html">Behind the Scene</a></li>
-          <li><a href="./edit.html" class="check">Edit</a></li>
-          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./direct.html" class="link">Direct</a></li>
+          <li><a href="./trailer.html" class="link">Trailer</a></li>
+          <li><a href="./interview.html" class="link">Interview</a></li>
+          <li>
+            <a href="./behindTheScene.html" class="link">Behind the Scene</a>
+          </li>
+          <li><a href="./edit.html" class="check link">Edit</a></li>
+          <li><a href="./contact.html" class="link">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -44,7 +62,7 @@
     <main>
       <section class="threecards">
         <div class="cards">
-          <a href="./edit-list/edit-1.html">
+          <a href="./edit-list/edit-1.html" class="link">
             <img
               class="cardInfo"
               src="./images/edit/editCardText01.png"
@@ -54,7 +72,7 @@
           </a>
         </div>
         <div class="cards">
-          <a href="./edit-list/edit-2.html">
+          <a href="./edit-list/edit-2.html" class="link">
             <img
               class="cardInfo"
               src="./images/edit/editCardText02.png"
@@ -64,7 +82,7 @@
           </a>
         </div>
         <div class="cards" style="display: none">
-          <a href="#">
+          <a href="#" class="link">
             <img class="cardInfo" src="" alt="" />
             <img src="" alt="" title="" />
           </a>
