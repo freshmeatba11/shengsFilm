@@ -47,6 +47,34 @@ header {
           align-items: center;
   padding: 2rem 0;
   margin-top: 2rem;
+  -webkit-animation: intoPageHeader 3s forwards;
+          animation: intoPageHeader 3s forwards;
+}
+
+@-webkit-keyframes intoPageHeader {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-3rem);
+            transform: translateY(-3rem);
+  }
+  80% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes intoPageHeader {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-3rem);
+            transform: translateY(-3rem);
+  }
+  80% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 
 header a#title {
@@ -306,6 +334,34 @@ main {
           justify-content: center;
   margin-top: 1rem;
   width: 100vw;
+  -webkit-animation: intoPageMain 3s forwards;
+          animation: intoPageMain 3s forwards;
+}
+
+@-webkit-keyframes intoPageMain {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(3rem);
+            transform: translateY(3rem);
+  }
+  80% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes intoPageMain {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(3rem);
+            transform: translateY(3rem);
+  }
+  80% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 
 main section.threecards {

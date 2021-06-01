@@ -29,6 +29,18 @@ header {
   padding: 2rem 0;
   margin-top: 2rem;
 
+  animation: intoPageHeader 3s forwards;
+  @keyframes intoPageHeader {
+    0% {
+      opacity: 0;
+      transform: translateY(-3rem);
+    }
+    80% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
   a#title {
     text-decoration: none;
     color: black;
@@ -234,6 +246,18 @@ main {
   justify-content: center;
   margin-top: 1rem;
   width: 100vw;
+
+  animation: intoPageMain 3s forwards;
+  @keyframes intoPageMain {
+    0% {
+      opacity: 0;
+      transform: translateY(3rem);
+    }
+    80% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
   // gallery page
   section.threecards {
