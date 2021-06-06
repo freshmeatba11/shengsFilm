@@ -52,8 +52,8 @@ header {
   padding: 2rem 0;
   margin-top: 2rem;
   z-index: 1;
-  -webkit-animation: intoPageHeader 3s forwards;
-          animation: intoPageHeader 3s forwards;
+  -webkit-animation: intoPageHeader 1.5s forwards;
+          animation: intoPageHeader 1.5s forwards;
 }
 
 header a#title {
@@ -313,8 +313,8 @@ main {
           justify-content: center;
   margin-top: 1rem;
   width: 100vw;
-  -webkit-animation: intoPageMain 3s forwards;
-          animation: intoPageMain 3s forwards;
+  -webkit-animation: intoPageMain 1.5s forwards;
+          animation: intoPageMain 1.5s forwards;
 }
 
 main section.threecards {
@@ -535,8 +535,8 @@ main section.selfInfo section.bottom div.iconBox a img:hover {
 @-webkit-keyframes intoPageHeader {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(-3rem);
-            transform: translateY(-3rem);
+    -webkit-transform: translateY(-2rem);
+            transform: translateY(-2rem);
   }
   80% {
     opacity: 1;
@@ -548,8 +548,8 @@ main section.selfInfo section.bottom div.iconBox a img:hover {
 @keyframes intoPageHeader {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(-3rem);
-            transform: translateY(-3rem);
+    -webkit-transform: translateY(-2rem);
+            transform: translateY(-2rem);
   }
   80% {
     opacity: 1;
@@ -561,8 +561,8 @@ main section.selfInfo section.bottom div.iconBox a img:hover {
 @-webkit-keyframes intoPageMain {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(3rem);
-            transform: translateY(3rem);
+    -webkit-transform: translateY(2rem);
+            transform: translateY(2rem);
   }
   80% {
     opacity: 1;
@@ -574,8 +574,8 @@ main section.selfInfo section.bottom div.iconBox a img:hover {
 @keyframes intoPageMain {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(3rem);
-            transform: translateY(3rem);
+    -webkit-transform: translateY(2rem);
+            transform: translateY(2rem);
   }
   80% {
     opacity: 1;

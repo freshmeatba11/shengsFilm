@@ -31,7 +31,7 @@ header {
   padding: 2rem 0;
   margin-top: 2rem;
   z-index: 1;
-  animation: intoPageHeader 3s forwards;
+  animation: intoPageHeader 1.5s forwards;
 
   a#title {
     text-decoration: none;
@@ -236,7 +236,7 @@ main {
   justify-content: center;
   margin-top: 1rem;
   width: 100vw;
-  animation: intoPageMain 3s forwards;
+  animation: intoPageMain 1.5s forwards;
 
   // gallery page
   section.threecards {
@@ -396,7 +396,7 @@ main {
 @keyframes intoPageHeader {
   0% {
     opacity: 0;
-    transform: translateY(-3rem);
+    transform: translateY(-2rem);
   }
   80% {
     opacity: 1;
@@ -407,7 +407,7 @@ main {
 @keyframes intoPageMain {
   0% {
     opacity: 0;
-    transform: translateY(3rem);
+    transform: translateY(2rem);
   }
   80% {
     opacity: 1;
