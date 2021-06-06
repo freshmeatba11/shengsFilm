@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="freshmeatba11" />
+    <meta
+      name="description"
+      content="嗨我是Sheng, 這是我的影音作品個人網站，歡迎交流！"
+    />
     <title>Sheng's Film</title>
     <!-- google font setting -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -11,13 +16,26 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500&family=Noto+Serif+TC:wght@500&display=swap"
       rel="stylesheet"
     />
-    <!-- image slider css setting -->
-    <!-- <link rel="stylesheet" href="./styles/imgSlider.css" /> -->
     <link rel="stylesheet" href="./styles/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("a.link").click(function (event) {
+          //點選 class 為 link 的 a 元件時觸發
+          event.preventDefault(); //取消事件預設動作
+          newLocation = this.href;
+          $("body").fadeOut(1000, newpage); //點選後淡出
+        });
+
+        function newpage() {
+          window.location = newLocation;
+        }
+      });
+    </script>
   </head>
   <body>
     <header>
-      <a id="title" href="index.html">Sheng’s Film</a>
+      <a id="title" class="link" href="index.html">Sheng’s Film</a>
       <a class="subTitle" href="index.html">Sheng’s Film</a>
 
       <!-- burger button -->
@@ -33,66 +51,76 @@
       <nav>
         <a href="index.html" class="title">Sheng’s Film</a>
         <ul class="mobileMenu">
-          <li><a href="./direct.html">Direct</a></li>
-          <li><a href="./trailer.html">Trailer</a></li>
-          <li><a href="./interview.html">Interview</a></li>
-          <li><a href="./behindTheScene.html">Behind the Scene</a></li>
-          <li><a href="./edit.html">Edit</a></li>
-          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./direct.html" class="link">Direct</a></li>
+          <li><a href="./trailer.html" class="link">Trailer</a></li>
+          <li><a href="./interview.html" class="link">Interview</a></li>
+          <li>
+            <a href="./behindTheScene.html" class="link">Behind the Scene</a>
+          </li>
+          <li><a href="./edit.html" class="link">Edit</a></li>
+          <li><a href="./contact.html" class="link">Contact</a></li>
         </ul>
       </nav>
     </header>
 
-    <!-- images slider -->
-    <div class="imgSliderBox">
-      <div id="cover" class="coverflow">
-        <a href="#"><img src="./images/imgSlider/slideImg01.png" alt=" " /></a>
-        <a href="#"><img src="./images/imgSlider/slideImg04.png" alt=" " /></a>
-        <a href="#"><img src="./images/imgSlider/slideImg03.png" alt=" " /></a>
-      </div>
-    </div>
-    <!-- the other sliders for mobile -->
-    <div class="noShow">
+    <main>
+      <!-- images slider -->
       <div class="imgSliderBox">
-        <div id="secondSlide" class="coverflow">
+        <div id="cover" class="coverflow">
           <a href="#"
-            ><img src="./images/imgSlider/slideImg06.png" alt=" "
+            ><img src="./images/imgSlider/slideImg01.png" alt=" "
           /></a>
-          <a href="#"
-            ><img src="./images/imgSlider/slideImg07.png" alt=" "
-          /></a>
-          <a href="#"
-            ><img src="./images/imgSlider/slideImg08.png" alt=" "
-          /></a>
-        </div>
-      </div>
-      <div class="imgSliderBox">
-        <div id="thirdSlide" class="coverflow">
-          <a href="#"
-            ><img src="./images/imgSlider/slideImg02.png" alt=" "
-          /></a>
-          <a href="#"
-            ><img src="./images/imgSlider/slideImg03.png" alt=" "
-          /></a>
-          <a href="#"
-            ><img src="./images/imgSlider/slideImg06.png" alt=" "
-          /></a>
-        </div>
-      </div>
-      <div class="imgSliderBox">
-        <div id="forthSlide" class="coverflow">
           <a href="#"
             ><img src="./images/imgSlider/slideImg04.png" alt=" "
           /></a>
           <a href="#"
-            ><img src="./images/imgSlider/slideImg05.png" alt=" "
-          /></a>
-          <a href="#"
-            ><img src="./images/imgSlider/slideImg01.png" alt=" "
+            ><img src="./images/imgSlider/slideImg03.png" alt=" "
           /></a>
         </div>
       </div>
-    </div>
+      <!-- the other sliders for mobile -->
+      <div class="noShow">
+        <div class="imgSliderBox">
+          <div id="secondSlide" class="coverflow">
+            <a href="#"
+              ><img src="./images/imgSlider/slideImg06.png" alt=" "
+            /></a>
+            <a href="#"
+              ><img src="./images/imgSlider/slideImg07.png" alt=" "
+            /></a>
+            <a href="#"
+              ><img src="./images/imgSlider/slideImg08.png" alt=" "
+            /></a>
+          </div>
+        </div>
+        <div class="imgSliderBox">
+          <div id="thirdSlide" class="coverflow">
+            <a href="#"
+              ><img src="./images/imgSlider/slideImg02.png" alt=" "
+            /></a>
+            <a href="#"
+              ><img src="./images/imgSlider/slideImg03.png" alt=" "
+            /></a>
+            <a href="#"
+              ><img src="./images/imgSlider/slideImg06.png" alt=" "
+            /></a>
+          </div>
+        </div>
+        <div class="imgSliderBox">
+          <div id="forthSlide" class="coverflow">
+            <a href="#"
+              ><img src="./images/imgSlider/slideImg04.png" alt=" "
+            /></a>
+            <a href="#"
+              ><img src="./images/imgSlider/slideImg05.png" alt=" "
+            /></a>
+            <a href="#"
+              ><img src="./images/imgSlider/slideImg01.png" alt=" "
+            /></a>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
   <script src="./js/app.js"></script>
 </html>

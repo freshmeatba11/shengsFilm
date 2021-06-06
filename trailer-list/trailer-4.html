@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="freshmeatba11" />
+    <meta
+      name="description"
+      content="嗨我是Sheng, 這是我的影音作品個人網站，歡迎交流！"
+    />
     <title>
       Sheng's Film | 一擊一會Precussion
       Online突擊任務第二集—即興之王與他的背包Offical Trailer
@@ -15,10 +20,25 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../styles/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("a.link").click(function (event) {
+          //點選 class 為 link 的 a 元件時觸發
+          event.preventDefault(); //取消事件預設動作
+          newLocation = this.href;
+          $("body").fadeOut(1000, newpage); //點選後淡出
+        });
+
+        function newpage() {
+          window.location = newLocation;
+        }
+      });
+    </script>
   </head>
   <body>
     <header>
-      <a id="title" href="../index.html">Sheng’s Film</a>
+      <a id="title" class="link" href="../index.html">Sheng’s Film</a>
       <!-- burger button -->
       <input type="checkbox" name="menu-switcher" id="menu-switcher" />
       <label for="menu-switcher" class="burger">
@@ -30,14 +50,16 @@
       </label>
 
       <nav>
-        <a href="../index.html" class="title">Sheng’s Film</a>
+        <a href="../index.html" class="title link">Sheng’s Film</a>
         <ul class="mobileMenu">
-          <li><a href="../direct.html">Direct</a></li>
-          <li><a href="../trailer.html" class="check">Trailer</a></li>
-          <li><a href="../interview.html">Interview</a></li>
-          <li><a href="../behindTheScene.html">Behind the Scene</a></li>
-          <li><a href="../edit.html">Edit</a></li>
-          <li><a href="../contact.html">Contact</a></li>
+          <li><a href="../direct.html" class="link">Direct</a></li>
+          <li><a href="../trailer.html" class="check link">Trailer</a></li>
+          <li><a href="../interview.html" class="link">Interview</a></li>
+          <li>
+            <a href="../behindTheScene.html" class="link">Behind the Scene</a>
+          </li>
+          <li><a href="../edit.html" class="link">Edit</a></li>
+          <li><a href="../contact.html" class="link">Contact</a></li>
         </ul>
       </nav>
     </header>
