@@ -17,21 +17,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/style.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        $("a.link").click(function (event) {
-          //點選 class 為 link 的 a 元件時觸發
-          event.preventDefault(); //取消事件預設動作
-          newLocation = this.href;
-          $("body").fadeOut(1000, newpage); //點選後淡出
-        });
-
-        function newpage() {
-          window.location = newLocation;
-        }
-      });
-    </script>
   </head>
   <body>
     <header>
