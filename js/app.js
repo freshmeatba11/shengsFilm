@@ -10,8 +10,7 @@ for (let i = 0; i < links.length; i++) {
   links[i].addEventListener("click", (e) => {
     //取消事件預設動作
     e.preventDefault();
-    let link = e.target;
-    let newLocation = link.href;
+    let newLocation = links[i].href;
     //設定動畫效果
     body.style.animation = "fadeOut 1s ease-out forwards";
     //動畫結束執行跳轉
